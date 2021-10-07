@@ -39,8 +39,6 @@ while ( iterator.hasNext ) {
 }
 ```
 
-![Screenshot-1](screenshot-1.png)
-
 
 ---
 
