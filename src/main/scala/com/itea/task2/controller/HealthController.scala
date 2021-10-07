@@ -4,9 +4,9 @@ import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
 import akka.event.Logging
 import com.itea.task2.HealthApp.system
-import com.itea.task2.LoadingModule
+import com.itea.task2.service.HealthService
 
-object HealthController extends LoadingModule {
+class HealthController(healthService: HealthService) {
   implicit val log = Logging(system, "HealthController$")
 
   val doGet: Route =
