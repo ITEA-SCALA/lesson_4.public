@@ -22,12 +22,12 @@ object UserModule extends App {
 //  userModule.theSecurityFilter
   //TODO  SecurityFilter
 
-//  userModule.theUserFinder
+  userModule.theUserFinder
   //TODO  DatabaseAccess
   //TODO  SecurityFilter
   //TODO  UserFinder
 
-  userModule.theUserStatusReader
+//  userModule.theUserStatusReader
   //TODO  DatabaseAccess
   //TODO  SecurityFilter
   //TODO  UserFinder
