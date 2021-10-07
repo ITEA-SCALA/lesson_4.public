@@ -1,4 +1,4 @@
-package com.itea.macwire
+package com.itea.di.macwire
 
 class DatabaseAccess() { println("DatabaseAccess") }
 class SecurityFilter() { println("SecurityFilter") }
