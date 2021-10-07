@@ -7,16 +7,19 @@ import akka.stream.ActorMaterializer
 import com.typesafe.config.{Config, ConfigFactory}
 
 object HealthApp extends App with LoadingModule {
-  val conf = ConfigFactory.load()
-  val restConfig: Config = conf.getConfig("config.rest")
+  val config: Config = ConfigFactory.load().getConfig("config.rest")
 
   implicit val system: ActorSystem = ActorSystem("akka-http")
   implicit val materializer: ActorMaterializer = ActorMaterializer()
 
-  val port = restConfig.getString("port").toInt
-  val bindingFuture = Http().bindAndHandle(healthController.doGet, restConfig.getString("interface"), port)
+  val port = config.getString("port").toInt
+  val bindingFuture = Http()
+    .bindAndHandle(
+      controller.doGet,
+      config.getString("interface"),
+      port)
 
-  implicit val log = Logging(system, "HealthRest$")
+  implicit val log = Logging(system, "HealthApp$")
   log.info(s"Server started at the port $port")
 
 }
