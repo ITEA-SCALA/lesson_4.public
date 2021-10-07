@@ -1,10 +1,10 @@
-package com.itea.task2.rest.route
+package com.itea.task2.controller
 
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.Route
 import com.itea.task2.service.HealthService
 import akka.event.Logging
-import com.itea.task2.rest.HealthRest.{ system }
+import com.itea.task2.HealthApp.{ system }
 
 object HealthRoute {
   implicit val log = Logging(system, "HealthRoute$")

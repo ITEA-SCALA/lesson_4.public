@@ -1,13 +1,13 @@
-package com.itea.task2.rest
+package com.itea.task2
 
 import akka.actor.ActorSystem
 import akka.event.Logging
 import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
-import com.itea.task2.rest.route.HealthRoute
-import com.typesafe.config.{ Config, ConfigFactory }
+import com.itea.task2.controller.HealthRoute
+import com.typesafe.config.{Config, ConfigFactory}
 
-object HealthRest extends App {
+object HealthApp extends App {
   val conf = ConfigFactory.load()
   val restConfig: Config = conf.getConfig("config.rest")
 
