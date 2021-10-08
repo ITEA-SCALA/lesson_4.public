@@ -50,8 +50,16 @@ object ClassToJson extends App {
   }
 
   def elementToJson(nameElement: String, valueElement: Any, countElement: Int): String = {
-    var str: String = "\n  \"" + nameElement + "\": " + valueElement + " (" + productElementType(valueElement) + ")"
+    var str: String = "\n  \"" + nameElement + "\": " + valueToJson(valueElement)
     if ( countElement!=0 ) str = "," + str
     str
+  }
+
+  def valueToJson(valueElement: Any): String = valueElement.getClass.getName match {
+    case "java.lang.Integer" => s"""$valueElement"""
+    case "java.lang.Boolean" => s"""$valueElement"""
+    case "java.lang.Character" => s"""\"$valueElement\""""
+    case "java.lang.String" => s"""\"$valueElement\""""
+    case _ => "???"
   }
 }
