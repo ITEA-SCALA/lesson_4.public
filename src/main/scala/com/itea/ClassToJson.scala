@@ -1,5 +1,9 @@
 package com.itea
 
+/**
+ * @see https://coderoad.ru/43214393/Как-получить-список-полей-и-подполей-класса-Scala-case
+ *      https://coderoad.ru/48882455/Scala-отражение-для-получения-типов-всех-полей-объекта
+ */
 object ClassToJson extends App {
 
   case class Abc(aa: Int, bb: Boolean, cc: Char, ss: String)
