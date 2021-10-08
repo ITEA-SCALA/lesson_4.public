@@ -6,29 +6,29 @@ package com.itea
  */
 object ClassToJson extends App {
 
-  case class Abc(aa: Int, bb: Boolean, cc: Char, ss: String)
-  val abc: Abc = Abc(123, true, 'i', "abc")
+  case class SomeClass(aa: Int, bb: Boolean, cc: Char, ss: String)
+  val clazz = SomeClass(123, true, 'i', "abc")
 
   // ///
-  var iteratorAbc = abc.productElementNames
+  var iteratorClazz = clazz.productElementNames
   var countElement: Int = 0
 
-//  while (iteratorAbc.hasNext) {
-//    val nameElement: String = iteratorAbc.next()
-//    val valueElement: Any = abc.productElement(countElement)
+//  while (iteratorClazz.hasNext) {
+//    val nameElement: String = iteratorClazz.next()
+//    val valueElement: Any = clazz.productElement(countElement)
 //    println("name='" + nameElement + "' type='" + productElementType(valueElement) + "' index(" + countElement + ")")
 //    countElement += 1
 //  }
 
 
   // ///
-  iteratorAbc = abc.productElementNames
+  iteratorClazz = clazz.productElementNames
   countElement = 0
 
-  print( abc.getClass.getSimpleName + ": {")
-  while (iteratorAbc.hasNext) {
-    val nameElement: String = iteratorAbc.next()
-    val valueElement: Any = abc.productElement(countElement)
+  print( clazz.getClass.getSimpleName + ": {")
+  while (iteratorClazz.hasNext) {
+    val nameElement: String = iteratorClazz.next()
+    val valueElement: Any = clazz.productElement(countElement)
     print( elementToJson(nameElement, valueElement, countElement) )
     countElement += 1
   }
