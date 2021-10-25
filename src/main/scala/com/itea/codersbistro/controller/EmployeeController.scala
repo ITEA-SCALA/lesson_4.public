@@ -62,6 +62,8 @@ trait EmployeeController extends EmployeeRepository {
 
   /**
    * Employee Routes for the GET/POST/Other REST endpoints for the Employee endpoints.
+   * ***
+   * http://localhost:8080/api/employee/100
    */
   lazy val employeeRoutes: Route = pathPrefix("employee") {
     get {
