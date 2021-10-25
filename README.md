@@ -51,9 +51,14 @@
 - библиотека [Chimney](https://scalalandio.github.io/chimney), вот эта библиотека является самая актуальная на сегодняшний день
   - **(** [lesson_5.public](https://github.com/ITEA-SCALA/lesson_5.public) >> [Ссылка на запись 5 занятия](https://us02web.zoom.us/rec/play/oS7ehfZyG5b1FYsrZkttX16_nHe5K6orqBTv4vZnsKogkxoSlq35M3HzXjlXH42oYEgxxD67yPWe4Qlt.hlub4EoYPi7IfMpa?continueMode=true&_x_zm_rtaid=SuiIm9yZTz6W64UCsOHJaw.1635159563087.237baa5a4b74da8798e185ebfcfd2ba4&_x_zm_rhtaid=522) **)**
 
+Enum-ы в Scala `Enumerations` (в Scala нет ключевого слова `enum` или хотя бы `enumeration`...)
+* `Советы начинающему скалисту, Часть 1`: https://habr.com/ru/post/323706/
+* `Советы начинающему скалисту, Часть 2`: https://habr.com/ru/post/330816/
+
 Ссылка на пример:
 - `REST API` на базе `Akka HTTP` https://github.com/ITEA-SCALA/akka-http-rest-example
 - `REST API` с `Akka Actor` https://github.com/ITEA-SCALA/akka-http-REST
+
 
 ---
 
