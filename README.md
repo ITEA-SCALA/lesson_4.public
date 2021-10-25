@@ -11,12 +11,14 @@
 
 ---
 
-## codersbistro
+## CodersBistro
+
+* `Repo` https://github.com/CodersBistro/akka-http-REST-application
 
 1. В качестве базы данных, реализуем собственный псевдо-репозиторий в `com.itea.codersbistro.repository.EmployeeRepository`
 2. Здесь составной тип данных `com.itea.codersbistro.entity.Employee`, который включат в себя `com.itea.codersbistro.entity.Address`
-3. В качестве конвертора (Мапера) из Entity в DTO применяется библиотека `akka.http.scaladsl.marshallers.sprayjson`
-4. Здесь применяется REST-сервис, реализованный через Akka HTTP `com.itea.codersbistro.controller.EmployeeController`
+3. В качестве конвертора (Мапера) из Entity в DTO применяется `Spray JSON для JSON marshalling / un-marshalling`
+4. Здесь применяется REST API, реализованный через Akka HTTP `com.itea.codersbistro.controller.EmployeeController`
    * `GET` http://localhost:8080/api/employee/100
      ```json
      {
