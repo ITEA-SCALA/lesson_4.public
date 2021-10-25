@@ -44,6 +44,15 @@
 - А также нужно предвидеть вариант с плохим ответом на (верхнем) уровне слоя-контролера приложения...
 
 
+Для конвертации объекта класса в JSON в Scala могут применятся:
+- библиотека [Scala AutoMapper](https://github.com/bfil/scala-automapper), но эта библиотека уже не пользуется такой популярностью
+- библиотека [Chimney](https://scalalandio.github.io/chimney), вот эта библиотека является самая актуальная на сегодняшний день
+  - **(** [lesson_5.public](https://github.com/ITEA-SCALA/lesson_5.public) >> [Ссылка на запись 5 занятия](https://us02web.zoom.us/rec/play/oS7ehfZyG5b1FYsrZkttX16_nHe5K6orqBTv4vZnsKogkxoSlq35M3HzXjlXH42oYEgxxD67yPWe4Qlt.hlub4EoYPi7IfMpa?continueMode=true&_x_zm_rtaid=SuiIm9yZTz6W64UCsOHJaw.1635159563087.237baa5a4b74da8798e185ebfcfd2ba4&_x_zm_rhtaid=522) **)**
+
+Ссылка на пример:
+- `REST API` на базе `Akka HTTP` https://github.com/ITEA-SCALA/akka-http-rest-example
+- `REST API` с `Akka Actor` https://github.com/ITEA-SCALA/akka-http-REST
+
 ---
 
 [Zoom * Ссылка на запись 4 занятия](https://us02web.zoom.us/rec/play/ef9bblHtV4JpV2QdEyAdsUrFk91oEIAtt9_iqT8gdD2eFAq0su7jZxuyo3RRnQlDPmz0ClsxU4w4ijDY.m3kqOZ1oEHar6yJ7?continueMode=true&_x_zm_rtaid=fU30Sl53Q7aSgbFjdd5gZQ.1633530332861.7d6e92a77de49932e53a113ad642839d&_x_zm_rhtaid=829)
